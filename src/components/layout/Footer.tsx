@@ -159,7 +159,7 @@ export default function Footer() {
             ©Rojeh Games.
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/policy" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
             <a href="#" className="hover:text-white transition-colors">

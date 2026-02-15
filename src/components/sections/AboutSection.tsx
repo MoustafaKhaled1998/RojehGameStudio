@@ -34,7 +34,7 @@ const values = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative py-14 md:py-18 bg-rojeh-cream overflow-hidden">
+    <section id="about" className="relative py-14 md:py-18 bg-rojeh-cream overflow-x-hidden">
       <FloatingElements />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,14 +44,15 @@ export default function AboutSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-16 md:mb-20 overflow-visible"
         >
           <motion.h2
             variants={fadeInUp}
-            className="font-[family-name:var(--font-fredoka)] text-4xl sm:text-5xl md:text-6xl font-bold text-rojeh-charcoal mb-6"
+            className="font-[family-name:var(--font-fredoka)] text-4xl sm:text-5xl md:text-6xl font-bold text-rojeh-charcoal mb-6 leading-tight md:leading-snug overflow-visible"
           >
-            We Make Games You Can{" "}
-            <span className="text-rojeh-red">Feel</span>
+            We don&apos;t make games.
+            <br />
+            <span className="text-rojeh-red">We draw dreams.</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
@@ -101,19 +102,6 @@ export default function AboutSection() {
           ))}
         </motion.div>
 
-        {/* Quote */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 md:mt-20 text-center"
-        >
-          <blockquote className="font-[family-name:var(--font-fredoka)] text-2xl md:text-3xl text-rojeh-charcoal/80 italic max-w-2xl mx-auto">
-            "We don't just make games.{" "}
-            <span className="text-rojeh-red not-italic">We draw dreams.</span>"
-          </blockquote>
-        </motion.div>
       </div>
     </section>
   );

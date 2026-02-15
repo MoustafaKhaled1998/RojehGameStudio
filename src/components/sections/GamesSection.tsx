@@ -29,7 +29,8 @@ export default function GamesSection() {
             variants={fadeInUp}
             className="font-[family-name:var(--font-fredoka)] text-4xl sm:text-5xl md:text-6xl font-bold text-rojeh-charcoal mb-6"
           >
-            Adventures <span className="text-rojeh-red">Await</span>
+            We Make Games You Can{" "}
+            <span className="text-rojeh-red">Feel</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
